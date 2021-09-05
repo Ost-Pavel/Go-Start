@@ -4,14 +4,14 @@ import	"fmt"
 
 func main() {
 
-	
-x:=1100
+	Cash := 1100
+	fmt.Scanln(&Cash)
 switch {
-  case x > 1000:
+  case Cash > 1000:
     fmt.Println("Apple")
-  case x>=500 && x<= 1000:
+  case Cash>=500 && Cash<= 1000:
     fmt.Println("Samsung")
-  case x <= 500:
+  case Cash <= 500:
     fmt.Println("Nokia с фонариком")
 
 /*  На вход подается целое число, сумма денег, которые у вас есть. Ваша задача - вывести марку телефона, которую вы можете себе позволить купить.
