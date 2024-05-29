@@ -7,12 +7,14 @@ func main() {
 	Cash := 1100
 	fmt.Scanln(&Cash)
 switch {
-  case Cash > 1000:
+   case Cash > 1000:
     fmt.Println("Apple")
-  case Cash>=500 && Cash<= 1000:
+   case Cash>=500 && Cash<= 1000:
     fmt.Println("Samsung")
-  case Cash <= 500:
-    fmt.Println("Nokia с фонариком")
+   case Cash >= 200 && Cash <= 500:
+		fmt.Println("Nokia с фонариком")
+   case Cash < 200:
+		fmt.Println("Остаешься со старым телефоном")
 
 /*  На вход подается целое число, сумма денег, которые у вас есть. Ваша задача - вывести марку телефона, которую вы можете себе позволить купить.
 
